@@ -1,5 +1,6 @@
 import json 
 import csv
+from processamentos_dados import Dados
 
 path_json = '/data_raw/dados_empresaA.json'
 
@@ -71,17 +72,23 @@ def salvando_dados(dados, path):
 path_json = 'data_raw/dados_empresaA.json'
 path_csv = 'data_raw/dados_empresaB.csv'
 
+dados_empresaA = Dados(path_json, 'json')
+print(dados_empresaA.dados)
+
+dados_empresaB = Dados(path_csv, 'csv')
+print(dados_empresaB.dados)
+
 #Iniciando a leitura
-dados_json = leitura_dados(path_json, 'json')
-nome_colunas_json = get_columns(dados_json)
-tamanho_dados_json = size_data(dados_json)
+#dados_json = leitura_dados(path_json, 'json')
+#nome_colunas_json = get_columns(dados_json)
+#tamanho_dados_json = size_data(dados_json)
 
-print(f"Nome colunas dados json: {nome_colunas_json}")
-print(f"Tamanho dos dados json: {tamanho_dados_json}")
+#print(f"Nome colunas dados json: {nome_colunas_json}")
+#print(f"Tamanho dos dados json: {tamanho_dados_json}")
 
-dados_csv = leitura_dados(path_csv, 'csv')
-nome_colunas_csv = get_columns(dados_csv)
-tamanho_dados_csv = size_data(dados_csv)
+#dados_csv = leitura_dados(path_csv, 'csv')
+#nome_colunas_csv = get_columns(dados_csv)
+#tamanho_dados_csv = size_data(dados_csv)
 
 #transformação dos dados 
 key_mapping = {'Nome do Item': 'Nome do Produto',
@@ -91,15 +98,15 @@ key_mapping = {'Nome do Item': 'Nome do Produto',
                 'Nome da Loja': 'Filial',
                 'Data da Venda': 'Data da Venda'}
 
-dados_csv = rename_columns(dados_csv, key_mapping)
-nome_colunas_csv = get_columns(dados_csv)
-print(nome_colunas_csv)
+#dados_csv = rename_columns(dados_csv, key_mapping)
+#nome_colunas_csv = get_columns(dados_csv)
+#print(nome_colunas_csv)
 
-dados_fusao = join(dados_json, dados_csv)
-nome_colunas_fusao = get_columns(dados_fusao)
-tamanho_dados_fusao = size_data(dados_fusao)
-print(nome_colunas_fusao)
-print(tamanho_dados_fusao)
+#dados_fusao = join(dados_json, dados_csv)
+#nome_colunas_fusao = get_columns(dados_fusao)
+##tamanho_dados_fusao = size_data(dados_fusao)
+#print(nome_colunas_fusao)
+#print(tamanho_dados_fusao)
 
 
 #Salvando dados
