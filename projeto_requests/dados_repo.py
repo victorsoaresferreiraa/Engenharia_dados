@@ -1,5 +1,6 @@
 import requests
 import pandas as pd 
+import os 
 
 
 class DadosRepositorios:
@@ -7,7 +8,7 @@ class DadosRepositorios:
     def __init__(self, owner):
         self.owner = owner 
         self.api_base_url = 'https://api.github.com'
-        self.acess_token = 'seu_token'
+        self.access_token= os.getenv('KEY')
         self.headers = {'Authorization':'Bearer ' + self.access_token,
                         'X-GitHub-Api-Version': '2022-11-28'}
         
