@@ -1184,6 +1184,7 @@ jupyter-server = ">=1.8,<3"
 test = ["pytest", "pytest-console-scripts", "pytest-jupyter", "pytest-tornasync"]
 
 [[package]]
+<<<<<<< HEAD
 name = "numpy"
 version = "2.0.1"
 description = "Fundamental package for array computing in Python"
@@ -1238,6 +1239,8 @@ files = [
 ]
 
 [[package]]
+=======
+>>>>>>> f105e1415ea08196551f3e5093c3cb9a2ee485be
 name = "overrides"
 version = "7.7.0"
 description = "A decorator to automatically detect mismatch when overriding a method."
@@ -1260,6 +1263,7 @@ files = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "pandas"
 version = "2.2.2"
 description = "Powerful data structures for data analysis, time series, and statistics"
@@ -1329,6 +1333,8 @@ test = ["hypothesis (>=6.46.1)", "pytest (>=7.3.2)", "pytest-xdist (>=2.2.0)"]
 xml = ["lxml (>=4.9.2)"]
 
 [[package]]
+=======
+>>>>>>> f105e1415ea08196551f3e5093c3cb9a2ee485be
 name = "pandocfilters"
 version = "1.5.1"
 description = "Utilities for writing pandoc filters in python"
@@ -1506,6 +1512,7 @@ files = [
 six = ">=1.5"
 
 [[package]]
+<<<<<<< HEAD
 name = "python-dotenv"
 version = "1.0.1"
 description = "Read key-value pairs from a .env file and set them as environment variables"
@@ -1520,6 +1527,8 @@ files = [
 cli = ["click (>=5.0)"]
 
 [[package]]
+=======
+>>>>>>> f105e1415ea08196551f3e5093c3cb9a2ee485be
 name = "python-json-logger"
 version = "2.0.7"
 description = "A python library adding a json log formatter"
@@ -1531,6 +1540,7 @@ files = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "pytz"
 version = "2024.1"
 description = "World timezone definitions, modern and historical"
@@ -1542,6 +1552,8 @@ files = [
 ]
 
 [[package]]
+=======
+>>>>>>> f105e1415ea08196551f3e5093c3cb9a2ee485be
 name = "pywin32"
 version = "306"
 description = "Python for Window Extensions"
@@ -2078,6 +2090,7 @@ files = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "tzdata"
 version = "2024.1"
 description = "Provider of IANA time zone data"
@@ -2089,6 +2102,8 @@ files = [
 ]
 
 [[package]]
+=======
+>>>>>>> f105e1415ea08196551f3e5093c3cb9a2ee485be
 name = "uri-template"
 version = "1.3.0"
 description = "RFC 6570 URI Template Processor"
@@ -2185,4 +2200,8 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
+<<<<<<< HEAD
 content-hash = "8f2ea76d1609b8fd61ac088bf73a3d2276bb37fe03d2a46773ed85b82a0f3408"
+=======
+content-hash = "66439325e44e7767192214093eb4cd0a492da3148f7b94006c9b991edf329580"
+>>>>>>> f105e1415ea08196551f3e5093c3cb9a2ee485be

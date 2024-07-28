@@ -3,8 +3,11 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+<<<<<<< HEAD
 .env
 
+=======
+>>>>>>> f105e1415ea08196551f3e5093c3cb9a2ee485be
 # C extensions
 *.so
 
