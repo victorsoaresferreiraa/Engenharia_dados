@@ -9,12 +9,9 @@ readme = "README.md"
 python = "^3.12"
 wget = "^3.2"
 notebook = "^7.2.1"
-<<<<<<< HEAD
 pandas = "^2.2.2"
 requests = "^2.32.3"
 python-dotenv = "^1.0.1"
-=======
->>>>>>> f105e1415ea08196551f3e5093c3cb9a2ee485be
 
 
 [build-system]

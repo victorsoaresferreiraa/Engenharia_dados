@@ -1,0 +1,7 @@
+db.createdatabase('Series')
+
+db.series.drop()
+
+use Alura_series_02
+db.drop.database()
+
